@@ -32,6 +32,7 @@ model Bought {
   date_pay DateTime 
   client_id Int
   paid Boolean @default(false)
+  value Float
 
   client Client @relation(fields: [client_id], references: [id])
 
